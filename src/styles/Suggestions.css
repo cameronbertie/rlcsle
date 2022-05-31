@@ -1,0 +1,70 @@
+
+.suggestions {
+    list-style: none;
+    width: 100%;
+    max-width: 336px;
+    margin: auto;
+    height: 240px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: end;
+    
+}
+
+.suggestion {
+    padding: 21px 27px;
+    background-color:rgba(129, 131, 132, 0.82);
+    backdrop-filter: blur(30px) !important;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .upperContainer {
+      padding: 0 !important;
+      width: 540px;
+      margin: auto;
+      top: 450.58px !important;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .upperContainer {
+      width: 720px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .upperContainer {
+      width: 960px;
+    }
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .upperContainer {
+      width: 1140px;
+    }
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    .upperContainer {
+      width: 1320px;
+    }
+  }
+  
+  .upperContainer {
+    z-index: 97;
+    position: absolute;
+    top: 425.48px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+  }

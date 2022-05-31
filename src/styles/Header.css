@@ -1,0 +1,101 @@
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .main-heading {
+        font-size: 37px !important;
+    }
+
+    .secondary-heading{
+      font-size: 13.28px !important;
+      margin-bottom: 6px !important;
+    }
+
+    .update-heading{
+      font-size: 13.28px !important;
+      margin-bottom: 6px !important;
+    }
+
+    .beta-text {
+      font-size: 13.28px !important;
+      margin-bottom: 6px !important;
+    }
+  }
+
+.header-container {
+    border-bottom: 1px solid #3a3a3c;
+    z-index: 98;
+    display: flex;
+    padding: 0 24px;
+    justify-content: space-between;
+  }
+
+  .main-heading {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    color: #fc7c04;
+    margin: 0;
+}
+
+.secondary-heading{
+  font-size: 10.72px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.update-heading{
+  font-size: 10.72px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: 700;
+  color: yellow;
+}
+
+.questionIconContainer{
+  display: flex;
+  align-items: center;
+}
+
+.questionIcon {
+  filter: invert(98%) sepia(3%) saturate(160%) hue-rotate(185deg) brightness(115%) contrast(100%);
+  display: flex;
+    align-content: center;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.headingContainer {
+  text-align: center;
+  display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.statsIconContainer {
+  display: flex;
+  align-items: center;
+}
+
+.statsIcon {
+  filter: invert(98%) sepia(3%) saturate(160%) hue-rotate(185deg) brightness(115%) contrast(100%);
+  display: flex;
+    align-content: center;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+
+.beta-text {
+  font-size: 10.72px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3px;
+  font-weight: 700;
+}

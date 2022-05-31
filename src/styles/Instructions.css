@@ -1,0 +1,159 @@
+.instructionsContainer{
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    height: 100vh;
+    background-color:rgba(18, 18, 19, 0.82);
+    backdrop-filter: blur(30px) !important;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    overflow: auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .instructionsInnerContainer {
+      padding: 0 !important;
+      width: 540px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .instructionsInnerContainer {
+      width: 720px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .instructionsInnerContainer {
+      width: 960px;
+    }
+  }
+  
+  /* X-Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .instructionsInnerContainer {
+      width: 1140px;
+    }
+  }
+  
+  /* XX-Large devices (larger desktops, 1400px and up) */
+  @media (min-width: 1400px) {
+    .instructionsInnerContainer {
+      width: 1320px;
+    }
+  }
+
+  
+
+  .instructionsInnerContainer {
+    padding: 0 24px;
+  }
+
+  .instructions{
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .instructionsHeader{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: 700;
+  }
+
+  .instructionsTitle {
+      text-align: center;
+  }
+
+  .instructionsHeaderBlank {
+      width: 24px;
+      height: auto;
+  }
+
+  .exitIconContainer{
+    display: flex;
+    align-items: center;
+  }
+
+  .exitIcon {
+    filter: invert(98%) sepia(3%) saturate(160%) hue-rotate(185deg) brightness(115%) contrast(100%);
+    display: flex;
+      align-content: center;
+      height: 24px;
+      width: 24px;
+      cursor: pointer;
+  }
+
+
+  .examples {
+      border-top: 1px solid #3a3a3c;
+      border-bottom: 1px solid #3a3a3c;
+  }
+
+  .example {
+    margin: 24px 0;
+  }
+
+  .tileRow {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      max-width: 336px;
+      width: 100%;
+  }
+
+  .tile {
+      height: 58px;
+      padding: 2px;
+      display: flex;
+    align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  }
+
+  .correct {
+    background-color:rgb(83, 141, 78);
+    border: 2px solid rgb(83, 141, 78);
+  }
+
+  .wrong {
+    background-color: rgb(58, 58, 60);
+    border: 2px solid rgb(58, 58, 60);
+  }
+
+  .blank {
+    background-color: none;
+    border: 2px solid #3a3a3c;
+  }
+
+  .flag{
+    width: 100%;
+    height: auto;
+}
+
+.playerName {
+    font-size: 13.28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.sideMessage {
+  font-size: 12px;
+  padding-top: 60px;
+}
+
+
+
+
+  
+
+    

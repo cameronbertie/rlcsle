@@ -1,0 +1,33 @@
+.win-container {
+    padding-top: 44px;
+}
+
+.winner-heading {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.mystery-heading {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.clock-box {
+    display: flex;
+    justify-content: center;
+}
+
+.clock {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.clock-available {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
