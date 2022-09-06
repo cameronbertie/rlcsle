@@ -51,10 +51,51 @@ function App() {
   const [currentStreak, setCurrentStreak] = useState(0);
   const [maxStreak, setMaxStreak] = useState(0);
 
+  const [round1Win, setRound1Win] = useState(0);
+  const [round2Win, setRound2Win] = useState(0);
+  const [round3Win, setRound3Win] = useState(0);
+  const [round4Win, setRound4Win] = useState(0);
+  const [round5Win, setRound5Win] = useState(0);
+  const [round6Win, setRound6Win] = useState(0);
+  const [round7Win, setRound7Win] = useState(0);
+
+  const [round1Percentage, setRound1Percentage] = useState(0);
+  const [round2Percentage, setRound2Percentage] = useState(0);
+  const [round3Percentage, setRound3Percentage] = useState(0);
+  const [round4Percentage, setRound4Percentage] = useState(0);
+  const [round5Percentage, setRound5Percentage] = useState(0);
+  const [round6Percentage, setRound6Percentage] = useState(0);
+  const [round7Percentage, setRound7Percentage] = useState(0);
+
+  const [round1Guess, setRound1Guess] = useState(false);
+  const [round2Guess, setRound2Guess] = useState(false);
+  const [round3Guess, setRound3Guess] = useState(false);
+  const [round4Guess, setRound4Guess] = useState(false);
+  const [round5Guess, setRound5Guess] = useState(false);
+  const [round6Guess, setRound6Guess] = useState(false);
+  const [round7Guess, setRound7Guess] = useState(false);
+
   let players = [];
   for (let i = 0; i < data.length; i++) {
     players.push(data[i].Name);
   }
+
+  useEffect(() => {
+    setRound1Percentage((round1Win / totalGames) * 100);
+    setRound2Percentage((round2Win / totalGames) * 100);
+    setRound3Percentage((round3Win / totalGames) * 100);
+    setRound4Percentage((round4Win / totalGames) * 100);
+    setRound5Percentage((round5Win / totalGames) * 100);
+    setRound6Percentage((round6Win / totalGames) * 100);
+    setRound7Percentage((round7Win / totalGames) * 100);
+  }, [totalGames]);
+
+  useEffect(() => {
+    if (localStorage.getItem("versionCode") === "spring-21-22") {
+      localStorage.clear();
+      localStorage.setItem("versionCode", "worlds-21-22");
+    }
+  }, []);
 
   useEffect(() => {
     // let now = new Date();
@@ -85,13 +126,57 @@ function App() {
     }
 
     const randomNumberArray = [
-      34, 0, 12, 33, 14, 11, 18, 17, 43, 29, 32, 2, 25, 35, 30, 1, 19, 39, 22,
-      9, 23, 3, 5, 13, 15, 36, 31, 38, 10, 41, 20, 26, 37, 28, 4, 40, 8, 21, 6,
-      42, 16, 44, 24, 27, 7, 35, 0, 25, 14, 5, 22, 30, 33, 7, 19, 15, 29, 24, 6,
-      28, 38, 3, 12, 11, 23, 36, 2, 39, 43, 9, 31, 34, 44, 27, 37, 20, 26, 8,
-      16, 41, 42, 1, 32, 17, 13, 10, 40, 4, 18, 21, 3, 42, 38, 29, 23, 20, 15,
-      43, 31, 10, 0, 11, 6, 36, 22, 14, 17, 33, 44, 5, 32, 16, 24, 19, 4, 28, 8,
-      25, 2, 41, 7, 12, 35, 18, 27, 21, 13, 1, 37, 26, 9, 30, 39, 34, 40,
+     54, 54, 30, 1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31,
+      2, 64, 63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18,
+      65, 0, 66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5,
+      60, 48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30, 1, 36, 9,
+      70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64, 63, 38, 49,
+      17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0, 66, 8, 21,
+      6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60, 48, 69, 42,
+      16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30, 1, 36, 9, 70, 45, 46, 61,
+      10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64, 63, 38, 49, 17, 35, 4, 39,
+      11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0, 66, 8, 21, 6, 43, 47, 22,
+      50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60, 48, 69, 42, 16, 57, 71, 33,
+      29, 62, 37, 53, 23, 40, 54, 30, 1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67,
+      26, 52, 41, 14, 3, 31, 2, 64, 63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34,
+      68, 27, 13, 15, 20, 18, 65, 0, 66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32,
+      44, 12, 7, 58, 24, 25, 5, 60, 48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53,
+      23, 40, 54, 30, 1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14,
+      3, 31, 2, 64, 63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15,
+      20, 18, 65, 0, 66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58,
+      24, 25, 5, 60, 48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40, 54, 30,
+      1, 36, 9, 70, 45, 46, 61, 10, 19, 59, 67, 26, 52, 41, 14, 3, 31, 2, 64,
+      63, 38, 49, 17, 35, 4, 39, 11, 51, 55, 34, 68, 27, 13, 15, 20, 18, 65, 0,
+      66, 8, 21, 6, 43, 47, 22, 50, 28, 56, 32, 44, 12, 7, 58, 24, 25, 5, 60,
+      48, 69, 42, 16, 57, 71, 33, 29, 62, 37, 53, 23, 40
     ];
 
     function selectedDate(date = new Date()) {
@@ -99,8 +184,8 @@ function App() {
     }
 
     var dateArray = getDates(
-      selectedDate(new Date(2022, 2, 23)),
-      selectedDate(new Date(2022, 5, 30))
+      selectedDate(new Date(2022, 7, 3)),
+      selectedDate(new Date(2023, 7, 3))
     );
 
     function removeTime(date = new Date()) {
@@ -142,6 +227,7 @@ function App() {
             localStorage.removeItem(`showGameComplete`);
             localStorage.removeItem(`showWin`);
             localStorage.removeItem(`showLose`);
+            localStorage.removeItem(`round${i}Guess`);
           }
         } else {
           //It is the same day
@@ -248,6 +334,77 @@ function App() {
         ? JSON.parse(localStorage.getItem("maxStreak"))
         : 0
     );
+    setRound1Win(
+      JSON.parse(localStorage.getItem("round1Win"))
+        ? JSON.parse(localStorage.getItem("round1Win"))
+        : 0
+    );
+    setRound2Win(
+      JSON.parse(localStorage.getItem("round2Win"))
+        ? JSON.parse(localStorage.getItem("round2Win"))
+        : 0
+    );
+    setRound3Win(
+      JSON.parse(localStorage.getItem("round3Win"))
+        ? JSON.parse(localStorage.getItem("round3Win"))
+        : 0
+    );
+    setRound4Win(
+      JSON.parse(localStorage.getItem("round4Win"))
+        ? JSON.parse(localStorage.getItem("round4Win"))
+        : 0
+    );
+    setRound5Win(
+      JSON.parse(localStorage.getItem("round5Win"))
+        ? JSON.parse(localStorage.getItem("round5Win"))
+        : 0
+    );
+    setRound6Win(
+      JSON.parse(localStorage.getItem("round6Win"))
+        ? JSON.parse(localStorage.getItem("round6Win"))
+        : 0
+    );
+    setRound7Win(
+      JSON.parse(localStorage.getItem("round7Win"))
+        ? JSON.parse(localStorage.getItem("round7Win"))
+        : 0
+    );
+
+    setRound1Guess(
+      JSON.parse(localStorage.getItem("round1Guess"))
+        ? JSON.parse(localStorage.getItem("round1Guess"))
+        : false
+    );
+    setRound2Guess(
+      JSON.parse(localStorage.getItem("round2Guess"))
+        ? JSON.parse(localStorage.getItem("round2Guess"))
+        : false
+    );
+    setRound3Guess(
+      JSON.parse(localStorage.getItem("round3Guess"))
+        ? JSON.parse(localStorage.getItem("round3Guess"))
+        : false
+    );
+    setRound4Guess(
+      JSON.parse(localStorage.getItem("round4Guess"))
+        ? JSON.parse(localStorage.getItem("round4Guess"))
+        : false
+    );
+    setRound5Guess(
+      JSON.parse(localStorage.getItem("round5Guess"))
+        ? JSON.parse(localStorage.getItem("round5Guess"))
+        : false
+    );
+    setRound6Guess(
+      JSON.parse(localStorage.getItem("round6Guess"))
+        ? JSON.parse(localStorage.getItem("round6Guess"))
+        : false
+    );
+    setRound7Guess(
+      JSON.parse(localStorage.getItem("round7Guess"))
+        ? JSON.parse(localStorage.getItem("round7Guess"))
+        : false
+    );
 
     setShowWin(
       JSON.parse(localStorage.getItem("showWin"))
@@ -298,6 +455,23 @@ function App() {
     localStorage.setItem("totalWins", JSON.stringify(totalWins));
     localStorage.setItem("winPercentage", JSON.stringify(winPercentage));
     localStorage.setItem("currentStreak", JSON.stringify(currentStreak));
+    localStorage.setItem("maxStreak", JSON.stringify(maxStreak));
+
+    localStorage.setItem("round1Win", JSON.stringify(round1Win));
+    localStorage.setItem("round2Win", JSON.stringify(round2Win));
+    localStorage.setItem("round3Win", JSON.stringify(round3Win));
+    localStorage.setItem("round4Win", JSON.stringify(round4Win));
+    localStorage.setItem("round5Win", JSON.stringify(round5Win));
+    localStorage.setItem("round6Win", JSON.stringify(round6Win));
+    localStorage.setItem("round7Win", JSON.stringify(round7Win));
+
+    localStorage.setItem("round1Guess", JSON.stringify(round1Guess));
+    localStorage.setItem("round2Guess", JSON.stringify(round2Guess));
+    localStorage.setItem("round3Guess", JSON.stringify(round3Guess));
+    localStorage.setItem("round4Guess", JSON.stringify(round4Guess));
+    localStorage.setItem("round5Guess", JSON.stringify(round5Guess));
+    localStorage.setItem("round6Guess", JSON.stringify(round6Guess));
+    localStorage.setItem("round7Guess", JSON.stringify(round7Guess));
 
     localStorage.setItem("showWin", JSON.stringify(showWin));
     localStorage.setItem("showLose", JSON.stringify(showLose));
@@ -355,7 +529,31 @@ function App() {
       setCurrentStreak(getCurrentStreak);
       setMaxStreak(Math.max(getCurrentStreak, maxStreak));
       console.log();
-      localStorage.setItem("maxStreak", JSON.stringify(maxStreak));
+
+      if (setGuess === setGuess1 && value === randomPlayer) {
+        setRound1Win(round1Win + 1);
+        setRound1Guess(true);
+      } else if (setGuess === setGuess2 && value === randomPlayer) {
+        setRound2Win(round2Win + 1);
+        setRound2Guess(true);
+      } else if (setGuess === setGuess3 && value === randomPlayer) {
+        setRound3Win(round3Win + 1);
+        setRound3Guess(true);
+      } else if (setGuess === setGuess4 && value === randomPlayer) {
+        setRound4Win(round4Win + 1);
+        setRound4Guess(true);
+      } else if (setGuess === setGuess5 && value === randomPlayer) {
+        setRound5Win(round5Win + 1);
+        setRound5Guess(true);
+      } else if (setGuess === setGuess6 && value === randomPlayer) {
+        setRound6Win(round6Win + 1);
+        setRound6Guess(true);
+      } else if (setGuess === setGuess7 && value === randomPlayer) {
+        setRound7Win(round7Win + 1);
+        setRound7Guess(true);
+      } else {
+        console.log("error getting the guessed round");
+      }
     } else if (setGuess === setGuess7 && value !== randomPlayer) {
       // When the game is over and the player LOST
       setShowGameComplete(true);
@@ -398,14 +596,37 @@ function App() {
     <div>
       <Header
         totalGames={totalGames}
+        totalWins={totalWins}
         winPercentage={winPercentage}
         currentStreak={currentStreak}
+        maxStreak={maxStreak}
         showWin={showWin}
         showLose={showLose}
         showGameComplete={showGameComplete}
         firstStats={firstStats}
         setFirstStats={setFirstStats}
         randomPlayer={randomPlayer}
+        round1Win={round1Win}
+        round2Win={round2Win}
+        round3Win={round3Win}
+        round4Win={round4Win}
+        round5Win={round5Win}
+        round6Win={round6Win}
+        round7Win={round7Win}
+        round1Guess={round1Guess}
+        round2Guess={round2Guess}
+        round3Guess={round3Guess}
+        round4Guess={round4Guess}
+        round5Guess={round5Guess}
+        round6Guess={round6Guess}
+        round7Guess={round7Guess}
+        round1Percentage={round1Percentage}
+        round2Percentage={round2Percentage}
+        round3Percentage={round3Percentage}
+        round4Percentage={round4Percentage}
+        round5Percentage={round5Percentage}
+        round6Percentage={round6Percentage}
+        round7Percentage={round7Percentage}
       />
 
       <Win showWin={showWin} />

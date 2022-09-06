@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Instructions.css";
 
-import unitedStates from "../images/flags/united-states.png";
-import theGeneralNRG from "../images/teams/the-general-nrg.png";
-import dignitas from "../images/teams/dignitas.png";
-import scotland from "../images/flags/scotland.png";
+import canada from "../images/flags/canada.png";
+import G2Esports from "../images/teams/g2-esports.png";
+import moistEsports from "../images/teams/moist-esports.png";
+import england from "../images/flags/england.png";
 
 import close from "../close.svg";
 
@@ -25,8 +25,8 @@ export default function Instructions(props) {
             Guess the <strong>RLCS</strong> mystery player in seven tries.
           </p>
           <p>
-            Each guess must be the alias of a player that played at the RLCS
-            Winter Major LAN event in Los Angeles. Hit the guess button to
+            Each guess must be the alias of a player that qualified for the RLCS
+            World Championship Wildcard or Main Event in Fort Worth, Texas. This does not include substitutes. Hit the guess button to
             submit.
           </p>
           <p>
@@ -40,43 +40,43 @@ export default function Instructions(props) {
 
             <div className="example">
               <div className="tileRow">
-                <div className="tile blank"><p className="playerName">GarrettG</p></div>
+                <div className="tile blank"><p className="playerName">JKnaps</p></div>
                 <div className="tile correct"><p className="playerRegion">NA</p></div>
                 <div className="tile blank"><div>
-                    <img className="teamLogo" src={theGeneralNRG} alt="Team Logo" />
+                    <img className="teamLogo" src={G2Esports} alt="Team Logo" />
                   </div></div>
                 <div className="tile blank"><div>
-                    <img className="flag" src={unitedStates} alt="Flag" />
+                    <img className="flag" src={canada} alt="Flag" />
                   </div></div>
               </div>
               <p>
                 The mystery player represented the <strong>NA</strong> region at
-                the Winter Major LAN event.
+                the World Championship.
               </p>
             </div>
 
             <div className="example">
               <div className="tileRow">
                 <div className="tile blank">
-                <p className="playerName">Scrub Killa</p>
+                <p className="playerName">Joyo</p>
                 </div>
                 <div className="tile blank">
                 <p className="playerRegion">EU</p>
                 </div>
                 <div className="tile blank">
                 <div>
-                    <img className="teamLogo" src={dignitas} alt="Team Logo" />
+                    <img className="teamLogo" src={moistEsports} alt="Team Logo" />
                   </div>
                 </div>
                 <div className="tile wrong">
                   <div>
-                    <img className="flag" src={scotland} alt="Flag" />
+                    <img className="flag" src={england} alt="Flag" />
                   </div>
                 </div>
               </div>
               <p>
                 The mystery players nationality is not {" "}
-                <strong>Scotland</strong>.
+                <strong>England</strong>.
               </p>
             </div>
           </div>

@@ -1,181 +1,291 @@
+/* Small devices (small screens) */
+@media (max-width: 576px) {
 
-  /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .statsContainer {
-      padding: 0 !important;
-      width: 540px;
-      margin: auto;
-    }
+.statsBox {
+  padding-bottom: 0px !important;
+}
 
-    .statsInnerContainer {
-        width: 468px !important;
-      }
-  }
-  
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    .statsContainer {
-      width: 720px !important;
-    }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    .statsContainer {
-      width: 960px !important;
-    }
-  }
-  
-  /* X-Large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    .statsContainer {
-      width: 1140px !important;
-    }
-  }
-  
-  /* XX-Large devices (larger desktops, 1400px and up) */
-  @media (min-width: 1400px) {
-    .statsContainer {
-      width: 1320px !important;
-    }
-  }
-
-  
-  .statsContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 0 24px;
-  }
-
-  .statsOuterContainer {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px) !important;
-    z-index: 98;
-  }
-
-  .statsInnerContainer {
-    position: fixed;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 77%;
-    padding: 16px 16px 56px 16px;
-    height: auto;
-    overflow: auto;
-    background-color:#121213;
-    border-radius: 8px;
-    border: 1px solid #1a1a1b;
-  }
-
-  .exitIconContainer{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .exitIcon {
-    filter: invert(98%) sepia(3%) saturate(160%) hue-rotate(185deg) brightness(115%) contrast(100%);
-    display: flex;
-      align-content: center;
-      height: 24px;
-      width: 24px;
-      cursor: pointer;
+  .stats-heading-winner {
+    font-size: 16px !important;
+    margin: 0 !important;
   }
 
   .stats-heading {
-      font-size: 16px;
-      font-weight: 700;
-      text-align: center;
-  }
-
-  .stats-heading-winner {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin: 16px 0;
-}
-
-.stats-heading-available {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-}
-
-  .statsBox {
-      display: flex;
-      justify-content: center;
-      column-gap: 17px;
-      padding-bottom: 10px;
-  }
-
-  .statsContent {
-      display: flex;
-      flex-direction: column;
+    font-size: 13.28px !important;
+    margin-bottom: 8px;
   }
 
   .stat {
-      font-size: 36px;
-      font-weight: 400;
-      text-align: center;
+    font-size: 16px !important;
   }
 
   .stat-label {
-    font-size: 12px;
-    font-weight: 400;
-    text-align: center;
+    font-size: 10.72px !important;
+  }
+
+  .graph-data {
+    font-size: 10.72px !important;
+  }
+
+  .graph-label {
+    font-size: 10.72px !important;
+  }
+
+  .share-button {
+    font-size: 16px !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 4px 0 !important;
+  }
+
+  .ytMessage {
+    font-size: 13.28px !important;
+  }
+
+  .yt-button {
+    font-size: 16px !important;
+    height: auto !important;
+    padding: 4px 0 !important;
+  }
+
+  .sideMessage-1 {
+    font-size: 10.72px !important;
+  }
+
+  .linkMessage {
+    font-size: 10.72px !important;
+}
+}
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .statsContainer {
+    padding: 0 !important;
+    width: 540px;
+    margin: auto;
+  }
+
+  .statsInnerContainer {
+    width: 468px !important;
+  }
+
+  .stats-heading-winner {
+    font-size: 32px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .statsContainer {
+    width: 720px !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .statsContainer {
+    width: 960px !important;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .statsContainer {
+    width: 1140px !important;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .statsContainer {
+    width: 1320px !important;
+  }
+}
+
+.statsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+
+.statsOuterContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) !important;
+  z-index: 98;
+}
+
+.statsInnerContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 77%;
+  padding: 16px 16px 56px 16px;
+  height: auto;
+  overflow: auto;
+  background-color: #121213;
+  border-radius: 8px;
+  border: 1px solid #1a1a1b;
+}
+
+.exitIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.exitIcon {
+  filter: invert(98%) sepia(3%) saturate(160%) hue-rotate(185deg)
+    brightness(115%) contrast(100%);
+  display: flex;
+  align-content: center;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.stats-heading {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stats-heading-winner {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 16px 0;
+}
+
+.stats-heading-available {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.statsBox {
+  display: flex;
+  justify-content: center;
+  column-gap: 17px;
+  padding-bottom: 10px;
+}
+
+.statsContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.graph-container {
+  display: grid;
+
+  row-gap: 4px;
+  padding-bottom: 10px;
+}
+
+.graph-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.graph-label {
+  width: 10px;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.graph-data {
+  padding: 4px 8px;
+  font-weight: 700;
+  min-width: 10px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.lowerBox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  
 }
 
 .lowerBox {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
 }
 
 .countdownBox {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid white;
+  padding-right: 12px;
+  width: 50%;
 }
 
 .buttonBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding-left: 12px;
+  width: 50%;
 }
 
 .share-button {
-    background-color: #538d4e;
-    font-weight: bold;
-    color: white;
-    border-radius: 4px;
-    border: none;
-    width: 80%;
-    font-size: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: 52px;
-    cursor: pointer;
-}
-
-
-.yt-button {
-  background-color: #FF0000;
+  background-color: #538d4e;
   font-weight: bold;
   color: white;
   border-radius: 4px;
   border: none;
-  width: 80%;
+  width: 165px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 52px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.yt-button {
+  background-color: #ff0000;
+  font-weight: bold;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 165px;
   font-size: 20px;
   height: 52px;
   cursor: pointer;
-    text-decoration: none;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: inherit;
 }
 
 .yt-button-link {
@@ -188,22 +298,20 @@
 }
 
 .linkMessage {
-    font-size: .875rem;
-    text-align: center;
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .ytMessage {
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-align: center;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .sideMessage-1 {
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 24px;
+  font-size: 12px;
+  text-align: center;
 }
-
 
 .that-objective-container {
   display: flex;
@@ -237,5 +345,3 @@
 .sponsorship:hover {
   color: white;
 }
-
-
