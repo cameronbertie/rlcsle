@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Statistics.css";
-import thatObjective from "../white-logo.svg";
 import close from "../close.svg";
 import Countdown, { zeroPad } from "react-countdown";
 
@@ -40,8 +39,8 @@ export default function FirstStats(props) {
   const round6Percentage = props.round6Percentage;
   const round7Percentage = props.round7Percentage;
 
-  const [showLinkMessage, setShowLinkMessage] = useState(false);
-  const [linkMessage, setLinkMessage] = useState("SHARE");
+  // const [showLinkMessage, setShowLinkMessage] = useState(false);
+  // const [linkMessage, setLinkMessage] = useState("SHARE");
 
   const Completionist = () => (
     <span className="stats-heading-available">REFRESH PAGE</span>
@@ -61,11 +60,11 @@ export default function FirstStats(props) {
     }
   };
 
-  const handleShareButton = () => {
-    navigator.clipboard.writeText("https://rlcsle.com");
-    setLinkMessage("COPIED!");
-    setShowLinkMessage(true);
-  };
+  // const handleShareButton = () => {
+  //   navigator.clipboard.writeText("https://rlcsle.com");
+  //   setLinkMessage("COPIED!");
+  //   setShowLinkMessage(true);
+  // };
 
   return props.trigger ? (
     <div className="statsOuterContainer">
@@ -190,28 +189,19 @@ export default function FirstStats(props) {
                 />
               </div>
               <div className="buttonBox">
-                <button className="share-button" onClick={handleShareButton}>
-                  {linkMessage}
-                </button>
-                {showLinkMessage && (
-                  <p className="linkMessage">
-                    A shareable link has been copied. Send it to your friends!
+              <p className="linkMessage">
+                    Watch my video to see how I made this game.
                   </p>
-                )}
-               
-              </div>
-            </div>
-            <p className="ytMessage">
-            Watch my video to see how I made this game.
-          </p>
-          <a
+              <a
             href="https://youtu.be/pQKNzMJ1Ug8"
             target="_blank"
             rel="noreferrer"
             className="yt-button-link"
           >
             <button className="yt-button">WATCH</button>
-          </a> 
+          </a>
+              </div>
+            </div>
           </div>
           )}
             

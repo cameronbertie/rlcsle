@@ -39,7 +39,7 @@ export default function InputGuess(props) {
         
         </div>
         <div className="description-container">
-        <p className="input-description">You can only guess from players that qualified for the World Championship Wildcard or Main Event. This does not include substitutes.</p>
+        <p className="input-description">You can only guess from players that qualified for the Fall Major. This does not include substitutes.</p>
         </div>
         </div>
         )}

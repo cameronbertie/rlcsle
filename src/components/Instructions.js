@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Instructions.css";
 
-import canada from "../images/flags/canada.png";
-import G2Esports from "../images/teams/g2-esports.png";
-import moistEsports from "../images/teams/moist-esports.png";
+import morocco from "../images/flags/morocco.png";
+import karmineCorp from "../images/teams/karmine-corp.png";
+import genGMobil1Racing from "../images/teams/gen-g-mobil1-racing.png";
 import england from "../images/flags/england.png";
 
 import close from "../close.svg";
@@ -26,7 +26,7 @@ export default function Instructions(props) {
           </p>
           <p>
             Each guess must be the alias of a player that qualified for the RLCS
-            World Championship Wildcard or Main Event in Fort Worth, Texas. This does not include substitutes. Hit the guess button to
+            Fall Major in Rotterdam. This does not include substitutes. Hit the guess button to
             submit.
           </p>
           <p>
@@ -40,32 +40,32 @@ export default function Instructions(props) {
 
             <div className="example">
               <div className="tileRow">
-                <div className="tile blank"><p className="playerName">JKnaps</p></div>
-                <div className="tile correct"><p className="playerRegion">NA</p></div>
+                <div className="tile blank"><p className="playerName">itachi</p></div>
+                <div className="tile correct"><p className="playerRegion">EU</p></div>
                 <div className="tile blank"><div>
-                    <img className="teamLogo" src={G2Esports} alt="Team Logo" />
+                    <img className="teamLogo" src={karmineCorp} alt="Team Logo" />
                   </div></div>
                 <div className="tile blank"><div>
-                    <img className="flag" src={canada} alt="Flag" />
+                    <img className="flag" src={morocco} alt="Flag" />
                   </div></div>
               </div>
               <p>
-                The mystery player represented the <strong>NA</strong> region at
-                the World Championship.
+                The mystery player represented the <strong>EU</strong> region at
+                the Fall Major.
               </p>
             </div>
 
             <div className="example">
               <div className="tileRow">
                 <div className="tile blank">
-                <p className="playerName">Joyo</p>
+                <p className="playerName">ApparentlyJack</p>
                 </div>
                 <div className="tile blank">
-                <p className="playerRegion">EU</p>
+                <p className="playerRegion">NA</p>
                 </div>
                 <div className="tile blank">
                 <div>
-                    <img className="teamLogo" src={moistEsports} alt="Team Logo" />
+                    <img className="teamLogo" src={genGMobil1Racing} alt="Team Logo" />
                   </div>
                 </div>
                 <div className="tile wrong">
