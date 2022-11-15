@@ -91,10 +91,21 @@ function App() {
   }, [totalGames]);
 
   useEffect(() => {
+    
     if (localStorage.getItem("versionCode") === "worlds-21-22") {
       localStorage.clear();
       localStorage.setItem("versionCode", "fall-22-23");
     }
+    if (localStorage.getItem("versionCode") === null) {
+      localStorage.clear();
+      localStorage.setItem("versionCode", "fall-22-23");
+    }
+    if (localStorage.getItem("versionCode") === "spring-21-22") {
+      localStorage.clear();
+      localStorage.setItem("versionCode", "fall-22-23");
+    }
+
+
   }, []);
 
   useEffect(() => {
@@ -466,6 +477,7 @@ function App() {
     localStorage.setItem("showLose", JSON.stringify(showLose));
     localStorage.setItem("showGameOver", JSON.stringify(showGameOver));
     localStorage.setItem("showGameComplete", JSON.stringify(showGameComplete));
+    
   });
 
   const options = players.filter((option) =>
