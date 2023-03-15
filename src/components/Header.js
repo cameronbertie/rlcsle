@@ -62,12 +62,12 @@ export default function Header(props) {
 
 
   useEffect(() => {
-    setShowInstructions(JSON.parse(localStorage.getItem("showInstructionsFall22")  === null || JSON.parse(localStorage.getItem("showInstructionsFall22")) === true ? true:false));
+    setShowInstructions(JSON.parse(localStorage.getItem("showInstructionsWinter23")  === null || JSON.parse(localStorage.getItem("showInstructionsWinter23")) === true ? true:false));
     
   }, [])
 
   useEffect(() => {
-    localStorage.setItem("showInstructionsFall22", JSON.stringify(showInstructions));
+    localStorage.setItem("showInstructionsWinter23", JSON.stringify(showInstructions));
     
   })
 
@@ -168,7 +168,7 @@ setTrigger={setShowFirstStats}
         <h1 className="main-heading">
           RLCS<span style={{ color: "#345cfc" }}>LE</span>
         </h1>
-        <h2 className="secondary-heading">2022-2023 FALL MAJOR EDITION</h2>
+        <h2 className="secondary-heading">2022-2023 WINTER MAJOR EDITION</h2>
         {/* <h2 className="update-heading">SPRING SPLIT EDITION COMING SOON</h2> */}
         </div>
         </div>
