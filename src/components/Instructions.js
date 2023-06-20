@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Instructions.css";
 
+import france from "../images/flags/france.png";
+import teamVitality from "../images/teams/team-vitality.png";
+import spacestationGaming from "../images/teams/spacestation-gaming.png";
 import unitedStates from "../images/flags/united-states.png";
-import fazeClan from "../images/teams/faze-clan.png";
-import karmineCorp from "../images/teams/karmine-corp.png";
-import morocco from "../images/flags/morocco.png";
 
 import close from "../close.svg";
 
@@ -26,7 +26,7 @@ export default function Instructions(props) {
           </p>
           <p>
             Each guess must be the alias of a player that qualified for the RLCS
-            Winter Major in San Diego. This does not include substitutes. Hit the guess button to
+            Spring Major in Boston. This does not include substitutes. Hit the guess button to
             submit.
           </p>
           <p>
@@ -40,43 +40,43 @@ export default function Instructions(props) {
 
             <div className="example">
               <div className="tileRow">
-                <div className="tile blank"><p className="playerName">Firstkiller</p></div>
-                <div className="tile correct"><p className="playerRegion">NA</p></div>
+                <div className="tile blank"><p className="playerName">Alpha54</p></div>
+                <div className="tile correct"><p className="playerRegion">EU</p></div>
                 <div className="tile blank"><div>
-                    <img className="teamLogo" src={fazeClan} alt="Team Logo" />
+                    <img className="teamLogo" src={teamVitality} alt="Team Logo" />
                   </div></div>
                 <div className="tile blank"><div>
-                    <img className="flag" src={unitedStates} alt="Flag" />
+                    <img className="flag" src={france} alt="Flag" />
                   </div></div>
               </div>
               <p>
-                The mystery player represented the <strong>NA</strong> region at
-                the Winter Major.
+                The mystery player represented the <strong>EU</strong> region at
+                the Spring Major.
               </p>
             </div>
 
             <div className="example">
               <div className="tileRow">
                 <div className="tile blank">
-                <p className="playerName">itachi</p>
+                <p className="playerName">Arsenal</p>
                 </div>
                 <div className="tile blank">
-                <p className="playerRegion">EU</p>
+                <p className="playerRegion">NA</p>
                 </div>
                 <div className="tile blank">
                 <div>
-                    <img className="teamLogo" src={karmineCorp} alt="Team Logo" />
+                    <img className="teamLogo" src={spacestationGaming} alt="Team Logo" />
                   </div>
                 </div>
                 <div className="tile wrong">
                   <div>
-                    <img className="flag" src={morocco} alt="Flag" />
+                    <img className="flag" src={unitedStates} alt="Flag" />
                   </div>
                 </div>
               </div>
               <p>
                 The mystery players nationality is not {" "}
-                <strong>Morocco</strong>.
+                <strong>United States</strong>.
               </p>
             </div>
           </div>

@@ -1,95 +1,5 @@
 [
   {
-    "Name": "Firstkiller",
-    "Nationality": "United States",
-    "Team": "FaZe Clan",
-    "Region": "NA"
-  },
-  {
-    "Name": "Sypical",
-    "Nationality": "United States",
-    "Team": "FaZe Clan",
-    "Region": "NA"
-  },
-  {
-    "Name": "mist",
-    "Nationality": "United States",
-    "Team": "FaZe Clan",
-    "Region": "NA"
-  },
-  {
-    "Name": "itachi",
-    "Nationality": "Morocco",
-    "Team": "Karmine Corp",
-    "Region": "EU"
-  },
-  {
-    "Name": "vatira.",
-    "Nationality": "France",
-    "Team": "Karmine Corp",
-    "Region": "EU"
-  },
-  {
-    "Name": "ExoTiiK",
-    "Nationality": "France",
-    "Team": "Karmine Corp",
-    "Region": "EU"
-  },
-  {
-    "Name": "Sad",
-    "Nationality": "Brazil",
-    "Team": "Team Secret",
-    "Region": "SAM"
-  },
-  {
-    "Name": "nxghtt",
-    "Nationality": "Brazil",
-    "Team": "Team Secret",
-    "Region": "SAM"
-  },
-  {
-    "Name": "kv1",
-    "Nationality": "Brazil",
-    "Team": "Team Secret",
-    "Region": "SAM"
-  },
-  {
-    "Name": "ApparentlyJack",
-    "Nationality": "England",
-    "Team": "Gen.G Mobil1 Racing",
-    "Region": "NA"
-  },
-  {
-    "Name": "Chronic",
-    "Nationality": "United States",
-    "Team": "Gen.G Mobil1 Racing",
-    "Region": "NA"
-  },
-  {
-    "Name": "noly",
-    "Nationality": "England",
-    "Team": "Gen.G Mobil1 Racing",
-    "Region": "NA"
-  },
-  {
-    "Name": "JKnaps",
-    "Nationality": "Canada",
-    "Team": "G2 Esports",
-    "Region": "NA"
-  },
-  {
-    "Name": "Chicago",
-    "Nationality": "United States",
-    "Team": "G2 Esports",
-    "Region": "NA"
-  },
-  {
-    "Name": "Atomic",
-    "Nationality": "United States",
-    "Team": "G2 Esports",
-    "Region": "NA"
-  },
-  {
     "Name": "Alpha54",
     "Nationality": "France",
     "Team": "Team Vitality",
@@ -102,49 +12,67 @@
     "Region": "EU"
   },
   {
-    "Name": "saizen",
+    "Name": "zen",
     "Nationality": "France",
     "Team": "Team Vitality",
     "Region": "EU"
   },
   {
-    "Name": "AcroniK.",
-    "Nationality": "Portugal",
-    "Team": "Team Liquid",
+    "Name": "Arsenal",
+    "Nationality": "United States",
+    "Team": "Spacestation Gaming",
+    "Region": "NA"
+  },
+  {
+    "Name": "Lj",
+    "Nationality": "United States",
+    "Team": "Spacestation Gaming",
+    "Region": "NA"
+  },
+  {
+    "Name": "hockser",
+    "Nationality": "United States",
+    "Team": "Spacestation Gaming",
+    "Region": "NA"
+  },
+  {
+    "Name": "caard",
+    "Nationality": "Brazil",
+    "Team": "FURIA Esports",
+    "Region": "NA"
+  },
+  {
+    "Name": "yanxnz",
+    "Nationality": "Brazil",
+    "Team": "FURIA Esports",
+    "Region": "NA"
+  },
+  {
+    "Name": "Lostt",
+    "Nationality": "Brazil",
+    "Team": "FURIA Esports",
+    "Region": "NA"
+  },
+  {
+    "Name": "M0nkey M00n",
+    "Nationality": "France",
+    "Team": "Team BDS",
     "Region": "EU"
   },
   {
-    "Name": "Oski",
-    "Nationality": "Poland",
-    "Team": "Team Liquid",
-    "Region": "EU"
-  },
-  {
-    "Name": "Atow.",
-    "Nationality": "Belgium",
-    "Team": "Team Liquid",
-    "Region": "EU"
-  },
-  {
-    "Name": "archie",
-    "Nationality": "England",
-    "Team": "Oxygen Esports",
-    "Region": "EU"
-  },
-  {
-    "Name": "Joreuz",
-    "Nationality": "Netherlands",
-    "Team": "Oxygen Esports",
+    "Name": "Seikoo",
+    "Nationality": "France",
+    "Team": "Team BDS",
     "Region": "EU"
   },
   {
     "Name": "rise.",
     "Nationality": "England",
-    "Team": "Oxygen Esports",
+    "Team": "Team BDS",
     "Region": "EU"
   },
   {
-    "Name": "DRUFINHO",
+    "Name": "drufinho",
     "Nationality": "Brazil",
     "Team": "KRÜ Esports",
     "Region": "SAM"
@@ -162,40 +90,40 @@
     "Region": "SAM"
   },
   {
-    "Name": "Andy",
+    "Name": "AYYJAYY",
     "Nationality": "United States",
-    "Team": "Dignitas",
+    "Team": "OpTic Gaming",
     "Region": "NA"
   },
   {
-    "Name": "dreaz",
+    "Name": "Retals",
     "Nationality": "United States",
-    "Team": "Dignitas",
+    "Team": "OpTic Gaming",
     "Region": "NA"
   },
   {
-    "Name": "Evoh",
+    "Name": "MajicBear",
     "Nationality": "United States",
-    "Team": "Dignitas",
+    "Team": "OpTic Gaming",
     "Region": "NA"
   },
   {
-    "Name": "kaka",
-    "Nationality": "Australia",
-    "Team": "Ground Zero Gaming",
-    "Region": "OCE"
+    "Name": "itachi",
+    "Nationality": "Morocco",
+    "Team": "Karmine Corp",
+    "Region": "EU"
   },
   {
-    "Name": "Fiberr",
-    "Nationality": "Australia",
-    "Team": "Ground Zero Gaming",
-    "Region": "OCE"
+    "Name": "Vatira",
+    "Nationality": "France",
+    "Team": "Karmine Corp",
+    "Region": "EU"
   },
   {
-    "Name": "Superlachie",
-    "Nationality": "Australia",
-    "Team": "Ground Zero Gaming",
-    "Region": "OCE"
+    "Name": "ExoTiiK",
+    "Nationality": "France",
+    "Team": "Karmine Corp",
+    "Region": "EU"
   },
   {
     "Name": "Reysbull",
@@ -216,75 +144,147 @@
     "Region": "NA"
   },
   {
-    "Name": "MaRc_By_8.",
-    "Nationality": "Spain",
-    "Team": "G1",
+    "Name": "AcroniK.",
+    "Nationality": "Portugal",
+    "Team": "Team Liquid",
     "Region": "EU"
   },
   {
-    "Name": "AtomiK",
-    "Nationality": "Spain",
-    "Team": "G1",
+    "Name": "Oski",
+    "Nationality": "Poland",
+    "Team": "Team Liquid",
     "Region": "EU"
   },
   {
-    "Name": "DORITO",
-    "Nationality": "Spain",
-    "Team": "G1",
+    "Name": "Atow.",
+    "Nationality": "Belgium",
+    "Team": "Team Liquid",
     "Region": "EU"
   },
   {
-    "Name": "Ahmad",
+    "Name": "kaka",
+    "Nationality": "Australia",
+    "Team": "Ground Zero Gaming",
+    "Region": "OCE"
+  },
+  {
+    "Name": "Fiberr",
+    "Nationality": "Australia",
+    "Team": "Ground Zero Gaming",
+    "Region": "OCE"
+  },
+  {
+    "Name": "Superlachie",
+    "Nationality": "Australia",
+    "Team": "Ground Zero Gaming",
+    "Region": "OCE"
+  },
+  {
+    "Name": "Aztromick",
+    "Nationality": "Brazil",
+    "Team": "Ninjas in Pyjamas",
+    "Region": "SAM"
+  },
+  {
+    "Name": "Bemmz",
+    "Nationality": "Brazil",
+    "Team": "Ninjas in Pyjamas",
+    "Region": "SAM"
+  },
+  {
+    "Name": "Motta",
+    "Nationality": "Brazil",
+    "Team": "Ninjas in Pyjamas",
+    "Region": "SAM"
+  },
+  {
+    "Name": "Kiileerrz",
     "Nationality": "Saudi Arabia",
-    "Team": "Team Falcons",
+    "Team": "Rule One",
     "Region": "MENA"
   },
   {
-    "Name": "oKhaliD",
+    "Name": "Rw9",
     "Nationality": "Saudi Arabia",
-    "Team": "Team Falcons",
+    "Team": "Rule One",
     "Region": "MENA"
   },
   {
-    "Name": "trk511",
+    "Name": "M7sn",
     "Nationality": "Saudi Arabia",
-    "Team": "Team Falcons",
+    "Team": "Rule One",
     "Region": "MENA"
   },
   {
-    "Name": "LCT",
-    "Nationality": "Indonesia",
-    "Team": "Gaimin Gladiators",
-    "Region": "APAC"
+    "Name": "ApparentlyJack",
+    "Nationality": "England",
+    "Team": "Gen.G Mobil1 Racing",
+    "Region": "NA"
   },
   {
-    "Name": "Maxeew",
+    "Name": "Chronic",
+    "Nationality": "United States",
+    "Team": "Gen.G Mobil1 Racing",
+    "Region": "NA"
+  },
+  {
+    "Name": "noly",
+    "Nationality": "England",
+    "Team": "Gen.G Mobil1 Racing",
+    "Region": "NA"
+  },
+  {
+    "Name": "Joyo",
+    "Nationality": "England",
+    "Team": "Moist Esports",
+    "Region": "EU"
+  },
+  {
+    "Name": "juicy",
+    "Nationality": "France",
+    "Team": "Moist Esports",
+    "Region": "EU"
+  },
+  {
+    "Name": "Kash",
+    "Nationality": "England",
+    "Team": "Moist Esports",
+    "Region": "EU"
+  },
+  {
+    "Name": "Amphis",
+    "Nationality": "Australia",
+    "Team": "PWR",
+    "Region": "OCE"
+  },
+  {
+    "Name": "Torsos",
+    "Nationality": "Australia",
+    "Team": "PWR",
+    "Region": "OCE"
+  },
+  {
+    "Name": "Fever",
+    "Nationality": "Australia",
+    "Team": "PWR",
+    "Region": "OCE"
+  },
+  {
+    "Name": "virtuoso",
     "Nationality": "Ireland",
-    "Team": "Gaimin Gladiators",
+    "Team": "Elevate",
     "Region": "APAC"
   },
   {
-    "Name": "OSM",
-    "Nationality": "Iceland",
-    "Team": "Gaimin Gladiators",
+    "Name": "ReaLize",
+    "Nationality": "Japan",
+    "Team": "Elevate",
     "Region": "APAC"
   },
   {
-    "Name": "Scrub",
-    "Nationality": "Australia",
-    "Team": "Pioneers",
-    "Region": "OCE"
-  },
-  {
-    "Name": "Bananahead",
-    "Nationality": "Australia",
-    "Team": "Pioneers",
-    "Region": "OCE"
-  },
-  {
-    "Name": "Hntr",
-    "Nationality": "Australia",
-    "Team": "Pioneers",
-    "Region": "OCE"
+    "Name": "Kamii",
+    "Nationality": "New Zealand",
+    "Team": "Elevate",
+    "Region": "APAC"
   }
 ]
